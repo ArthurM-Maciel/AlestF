@@ -4,7 +4,8 @@ public class StackOfInteger {
         private DoubleLinkedListOfInteger list;
 
         public StackOfInteger() {
-            this.list = new DoubleLinkedListOfInteger();
+
+                this.list = new DoubleLinkedListOfInteger();
         }
 
         /**
@@ -12,7 +13,11 @@ public class StackOfInteger {
          * @return Integer o valor do elemento no topo da pilha.
          */
         public Integer top() {
-            // Implementação do método
+                // Considera que o topo da pilha é o último elemento da lista
+                if (list.tail != null) {
+                        return list.tail.value;
+                }
+                return null;
         }
 
         /**
@@ -20,7 +25,12 @@ public class StackOfInteger {
          * @return Integer o valor do elemento removido do topo da pilha.
          */
         public Integer pop() {
-            // Implementação do método
+                if (list.tail != null) {
+                        Integer value = list.tail.value;
+                        list.remove(list.tail);
+                        return value;
+                }
+                return null;
         }
 
         /**
@@ -28,7 +38,7 @@ public class StackOfInteger {
          * @param value o valor do elemento a ser inserido na pilha.
          */
         public void push(Integer value) {
-            // Implementação do método
+                list.insertAtEnd(value); // Método para inserir no final da lista
         }
 
     }
