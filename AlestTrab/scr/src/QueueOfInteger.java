@@ -1,7 +1,9 @@
 public class QueueOfInteger {
+
     private DoubleLinkedListOfInteger list;
 
     public QueueOfInteger() {
+
         this.list = new DoubleLinkedListOfInteger();
     }
 
@@ -11,7 +13,10 @@ public class QueueOfInteger {
      * @return Integer o valor do elemento no início da fila.
      */
     public Integer head() {
-        // Implementação do método
+        if (list.head != null) {
+            return list.head.value;
+        }
+        return null;
     }
 
     /**
@@ -19,7 +24,12 @@ public class QueueOfInteger {
      * @return Integer o valor do elemento no início da fila.
      */
     public Integer dequeue() {
-        // Implementação do método
+        if (list.head != null) {
+            Integer value = list.head.value;
+            list.remove(list.head);
+            return value;
+        }
+        return null;
     }
 
     /**
@@ -28,8 +38,8 @@ public class QueueOfInteger {
      * @return void
      */
     public void enqueue(Integer value) {
-        // Implementação do método
+        list.insertAtEnd(value); // Método para inserir no final da lista
     }
 
 }
-}
+
