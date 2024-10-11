@@ -4,7 +4,6 @@ import java.util.Set;
 
 public class DoubleLinekedListOfnteger {
 
-    public class App {
         private Node head;
         private Node tail;
 
@@ -12,6 +11,11 @@ public class DoubleLinekedListOfnteger {
             Integer value;
             Node next;
             Node prev;
+
+            Node(Integer value){
+                this.value = value;
+
+            }
 
         }
 
@@ -44,7 +48,12 @@ public class DoubleLinekedListOfnteger {
         }
 
         public void staticToDynamic(Integer[] staticList) {
+            for( int i = 0; i< staticList.length; i +=2){
+                Integer value = staticList[i];
+                Integer position = staticList[i+1];
 
+                insertAtPosition(value, position);
+            }
 
 
         }
@@ -52,4 +61,4 @@ public class DoubleLinekedListOfnteger {
 
     }
 
-}
+
