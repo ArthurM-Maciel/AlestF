@@ -1,10 +1,10 @@
 public class QueueOfInteger {
 
-    private DoubleLinkedListOfInteger list;
+    private DoubleLinekedListOfnteger list;
 
     public QueueOfInteger() {
 
-        this.list = new DoubleLinkedListOfInteger();
+        this.list = new DoubleLinekedListOfnteger();
     }
 
 

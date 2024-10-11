@@ -4,6 +4,7 @@ public class App {
 
         StackOfInteger s = new StackOfInteger();
         QueueOfInteger q = new QueueOfInteger();
+        DoubleLinekedListOfnteger d = new DoubleLinekedListOfnteger();
 
         for (int i = 0; i < 4; i++) {
             s.push(list[i]);

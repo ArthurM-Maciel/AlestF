@@ -1,11 +1,11 @@
 public class StackOfInteger {
 
 
-        private DoubleLinkedListOfInteger list;
+        private DoubleLinekedListOfnteger list;
 
         public StackOfInteger() {
 
-                this.list = new DoubleLinkedListOfInteger();
+                this.list = new DoubleLinekedListOfnteger();
         }
 
         /**
