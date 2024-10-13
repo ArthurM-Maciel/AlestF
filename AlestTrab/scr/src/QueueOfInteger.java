@@ -38,7 +38,7 @@ public class QueueOfInteger {
      * @return void
      */
     public void enqueue(Integer value) {
-        list.insertAtEnd(value); // Método para inserir no final da lista
+        list.insertAtEnd(value);
     }
 
 }

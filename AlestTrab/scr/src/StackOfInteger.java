@@ -13,7 +13,6 @@ public class StackOfInteger {
          * @return Integer o valor do elemento no topo da pilha.
          */
         public Integer top() {
-                // Considera que o topo da pilha é o último elemento da lista
                 if (list.tail != null) {
                         return list.tail.value;
                 }
