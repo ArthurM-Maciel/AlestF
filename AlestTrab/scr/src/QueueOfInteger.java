@@ -1,10 +1,10 @@
 public class QueueOfInteger {
 
-    private DoubleLinkedListOfInteger list;
+    private DoubleLinekedListOfnteger list;
 
     public QueueOfInteger() {
 
-        this.list = new DoubleLinkedListOfInteger();
+        this.list = new DoubleLinekedListOfnteger();
     }
 
 
@@ -38,7 +38,7 @@ public class QueueOfInteger {
      * @return void
      */
     public void enqueue(Integer value) {
-        list.insertAtEnd(value); // Método para inserir no final da lista
+        list.insertAtEnd(value);
     }
 
 }
